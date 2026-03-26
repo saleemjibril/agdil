@@ -1,0 +1,47 @@
+.elementor-552 .elementor-element.elementor-element-8a4cd82{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-552 .elementor-element.elementor-element-bf262b9{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-552 .elementor-element.elementor-element-bf262b9:not(.elementor-motion-effects-element-type-background), .elementor-552 .elementor-element.elementor-element-bf262b9 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://ikore.org/Agdil/wp-content/uploads/2024/11/process-harvest-dried-corn-with-bamboo-basket-1-d.png");background-repeat:no-repeat;background-size:cover;}.elementor-552 .elementor-element.elementor-element-3527909{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;}.elementor-552 .elementor-element.elementor-element-4d3a2fe .jet-form-builder-row{margin-top:0px;margin-bottom:15px;}.elementor-552 .elementor-element.elementor-element-4d3a2fe .jet-form-builder__label{margin:0px 0px 0px 0px;padding:0px 0px 09px 0px;text-align:left;font-family:"Montserrat", Sans-serif;font-size:16px;font-weight:400;line-height:20px;color:#000000;}.elementor-552 .elementor-element.elementor-element-4d3a2fe .jet-form-builder__desc{text-align:left;}.elementor-552 .elementor-element.elementor-element-4d3a2fe .jet-form-builder__fields-group{gap:0.7em 0.7em;}.elementor-552 .elementor-element.elementor-element-4d3a2fe .jet-form-builder__field-wrap.checkradio-wrap span{gap:8px;}.elementor-552 .elementor-element.elementor-element-4d3a2fe .jet-form-builder input{color-scheme:normal;}.elementor-552 .elementor-element.elementor-element-4d3a2fe .jet-form-builder-repeater__row-remove{align-self:flex-start;}.elementor-552 .elementor-element.elementor-element-4d3a2fe .jet-form-builder__action-button{background-color:var( --e-global-color-primary );color:#FFFFFF;transition:all 0.3s;font-family:"Manrope", Sans-serif;font-weight:600;padding:015px 072px 015px 072px;border-style:none;}.elementor-552 .elementor-element.elementor-element-4d3a2fe .jet-form-builder__next-page-wrap{text-align:left;}.elementor-552 .elementor-element.elementor-element-4d3a2fe .jet-form-builder-message--success{text-align:center;}.elementor-552 .elementor-element.elementor-element-4d3a2fe .jet-form-builder-message--error{text-align:center;}.elementor-552 .elementor-element.elementor-element-4d3a2fe > .elementor-widget-container{padding:050px 0px 050px 0px;}.elementor-552 .elementor-element.elementor-element-4d3a2fe.elementor-element{--align-self:center;}#jet-popup-552 .jet-popup__container{width:998px;}#jet-popup-552 .jet-popup__inner{justify-content:center;align-items:center;}#jet-popup-552 .jet-popup__container-inner{justify-content:flex-start;padding:0px 0px 0px 0px;border-radius:20px 20px 20px 20px;}#jet-popup-552 .jet-popup__container-overlay{border-radius:20px 20px 20px 20px;}@media(min-width:768px){.elementor-552 .elementor-element.elementor-element-bf262b9{--width:40%;}.elementor-552 .elementor-element.elementor-element-3527909{--width:60%;}}/* Start custom CSS for jet-form-builder-form, class: .elementor-element-4d3a2fe *//* Styling the container */
+.jet-form-builder {
+    /* Add your desired styles here */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 512px
+}
+
+
+/* Styling the input fields */
+.jet-form-builder__field.text-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color:#f9f9f9
+}
+
+/* Styling the textarea for the message */
+.jet-form-builder__field.wysiwyg-field {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    min-height: 150px;
+}
+
+/* Styling the form row */
+.jet-form-builder-row {
+    margin-bottom: 15px;
+}
+
+/* Submit button styling */
+.jet-form-builder .jet-form-builder-submit {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.jet-form-builder .jet-form-builder-submit:hover {
+    background-color: #005bb5;
+}/* End custom CSS */

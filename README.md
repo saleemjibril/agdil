@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AGDIL — Next.js app
 
-## Getting Started
+Rebuild of [agdil.com](https://agdil.com) from the static WordPress export in the parent folder. See [ROUTES.md](./ROUTES.md) and [../SYSTEM_UNDERSTANDING.md](../SYSTEM_UNDERSTANDING.md).
 
-First, run the development server:
+## Commands
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Commerce (Phase 2)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Catalogue: `data/catalog.json` and `GET /api/catalog`.
+- **Headless WooCommerce:** replace `lib/commerce/catalog.ts` with fetches to `WOO_BASE_URL` + consumer key/secret (server-only).
+- **Replatform:** Medusa/Shopify — keep the same UI routes; swap data loaders.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Images
 
-## Learn More
+**`public/uploads/`** is a mirror of the WordPress export’s **`wp-content/uploads`** (same year/month folders and filenames). Refresh after pulling new media from WordPress:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+rsync -a ../wp-content/uploads/ public/uploads/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Site logo / icons: see [`lib/assets.ts`](./lib/assets.ts) (`/uploads/2024/10/...`).
+- Product photos: [`data/catalog.json`](./data/catalog.json) `image` + `thumb` paths under `/uploads/2025/08/...` (from the original product pages).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Content
 
-## Deploy on Vercel
+- Markdown under `content/` with frontmatter (`title`, `description`, optional `date`).
+- Optional HTML text extraction: `node scripts/extract-content.mjs`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Forms
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+CAC and credit forms POST to `/api/forms/*`. Connect email (e.g. Resend) or a database in the route handlers.

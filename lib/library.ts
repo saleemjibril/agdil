@@ -1,0 +1,265 @@
+export const libraryCategoryFilters = [
+  "Access to Finance",
+  "Digital marketing",
+  "Livestock health",
+  "Nutrition",
+  "Proximate processing",
+  "Urban Agriculture",
+] as const;
+
+export type LibraryFileType = "pdf" | "template" | "video";
+
+export type LibraryResource = {
+  id: number;
+  title: string;
+  date: string;
+  author: string;
+  cover: string;
+  downloadUrl: string;
+  downloadLabel: string;
+  fileType: LibraryFileType;
+  categories: string[];
+};
+
+export const libraryResources: LibraryResource[] = [
+  {
+    id: 3154,
+    title: "Business Plan Template",
+    date: "2026-03-24",
+    author: "Ikore",
+    cover: "/uploads/2026/03/Business-Plan-Words-With-Red-Upward-Arrow.jpg",
+    downloadUrl: "/uploads/2026/03/template-business-plan.doc",
+    downloadLabel: "Download Template",
+    fileType: "template",
+    categories: ["Access to Finance"],
+  },
+  {
+    id: 3151,
+    title: "Agdil Budget Template",
+    date: "2026-03-24",
+    author: "Ikore",
+    cover: "/uploads/2026/03/download.jpeg",
+    downloadUrl: "/uploads/2026/03/AGDIL-BUDGET-TEMPLATE.xlsx",
+    downloadLabel: "Download Template",
+    fileType: "template",
+    categories: ["Access to Finance"],
+  },
+  {
+    id: 3200,
+    title: "Animal Vaccination Schedule",
+    date: "2026-03-10",
+    author: "Ikore",
+    cover: "/uploads/2025/05/vaccine-scaled.jpg",
+    downloadUrl: "#",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Livestock health"],
+  },
+  {
+    id: 3201,
+    title: "5-Step Simple Ugu (Fluted Pumpkin) Planting Guide",
+    date: "2026-03-10",
+    author: "Ikore",
+    cover: "/uploads/2026/03/Ugwu-Crop-Farming.pdf-1.jpg",
+    downloadUrl: "#",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Urban Agriculture"],
+  },
+  {
+    id: 3202,
+    title: "6-Step Guide For Poultry Farming",
+    date: "2026-03-10",
+    author: "Ikore",
+    cover: "/uploads/2026/03/Poultry-Material.pdf-1-1.jpg",
+    downloadUrl: "#",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Livestock health"],
+  },
+  {
+    id: 3203,
+    title: "6 Step Simple Orange-Fleshed Sweet Potato (OFSP) Planting Guide",
+    date: "2026-03-10",
+    author: "Ikore",
+    cover: "/uploads/2026/03/0-1-scaled.png",
+    downloadUrl: "#",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Nutrition", "Urban Agriculture"],
+  },
+  {
+    id: 3204,
+    title: "Urban Farming Toolkit",
+    date: "2025-12-01",
+    author: "Ikore",
+    cover: "/uploads/2025/03/countryside-workers-out-field-1.png",
+    downloadUrl: "#",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Urban Agriculture"],
+  },
+  {
+    id: 1690,
+    title: "The Importance of Biosecurity",
+    date: "2025-05-15",
+    author: "Ikore",
+    cover: "/uploads/2025/05/Biosecurity-scaled.jpg",
+    downloadUrl: "#",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Livestock health"],
+  },
+  {
+    id: 1691,
+    title: "Vaccination & Medication Program For Broilers",
+    date: "2025-05-15",
+    author: "Ikore",
+    cover: "/uploads/2025/05/Broilerr-scaled.jpg",
+    downloadUrl: "#",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Livestock health"],
+  },
+  {
+    id: 1692,
+    title: "Training Manual on Broiler Production",
+    date: "2025-05-15",
+    author: "Kazeem Olajide",
+    cover: "/uploads/2025/05/WhatsApp-Image-2025-05-15-at-10.34.44_808241fe.jpg",
+    downloadUrl: "#",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Livestock health"],
+  },
+  {
+    id: 1672,
+    title: "Budget Template for Msme",
+    date: "2025-05-15",
+    author: "GIZ",
+    cover: "/uploads/2025/05/Budget-scaled.jpg",
+    downloadUrl: "/uploads/2025/05/giz2025-en-budget-template2.xlsx",
+    downloadLabel: "Download Template",
+    fileType: "template",
+    categories: ["Access to Finance"],
+  },
+  {
+    id: 1648,
+    title: "Business Plan Template",
+    date: "2025-05-15",
+    author: "Ikore",
+    cover: "/uploads/2025/05/bplan-scaled.jpg",
+    downloadUrl: "/uploads/2025/05/SIMPLE-BUSINESS-PLAN-TEMPLATE.docx",
+    downloadLabel: "Download Template",
+    fileType: "template",
+    categories: ["Access to Finance"],
+  },
+  {
+    id: 1645,
+    title: "Training Manual for Easy Access to Loans",
+    date: "2025-05-15",
+    author: "European Union",
+    cover: "/uploads/2025/05/WhatsApp-Image-2025-05-15-at-10.40.53_7b8e6665.jpg",
+    downloadUrl: "/uploads/2025/05/MSME-BOOK-FINAL-1-4.pdf",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Access to Finance"],
+  },
+  {
+    id: 1642,
+    title: "Training Manual for Msmes In Energy Business Financing",
+    date: "2025-05-15",
+    author: "GVEP International",
+    cover: "/uploads/2025/05/WhatsApp-Image-2025-05-15-at-10.38.19_92d52941.jpg",
+    downloadUrl: "/uploads/2025/05/manual_for_sme_energy_financing.pdf",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Access to Finance"],
+  },
+  {
+    id: 1700,
+    title: "Training Manual For Vitamin A Cassava",
+    date: "2025-05-15",
+    author: "GAIN",
+    cover: "/uploads/2025/05/WhatsApp-Image-2025-05-15-at-10.11.06_f2492dfa.jpg",
+    downloadUrl: "/uploads/2025/05/Final-Vitamin-A-Cassava-Training-Manual_GAIN.pdf",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Nutrition"],
+  },
+  {
+    id: 1701,
+    title: "Training Manual For Vitamin A Maize",
+    date: "2025-05-15",
+    author: "GAIN",
+    cover: "/uploads/2025/05/WhatsApp-Image-2025-05-15-at-10.16.49_ac738fea.jpg",
+    downloadUrl: "/uploads/2025/05/Final-Vit-A-Maize-Training-Manual_GAIN.pdf",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Nutrition"],
+  },
+  {
+    id: 1702,
+    title: "Training Manual for Biofortified Rice",
+    date: "2025-05-15",
+    author: "GAIN",
+    cover: "/uploads/2025/05/WhatsApp-Image-2025-05-15-at-10.24.02_a5a6b8c1.jpg",
+    downloadUrl: "/uploads/2025/05/Final-Rice-Training-Manual_GAIN.pdf",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Nutrition"],
+  },
+  {
+    id: 1703,
+    title: "Training Manual For OFSP",
+    date: "2025-05-15",
+    author: "GAIN",
+    cover: "/uploads/2025/05/WhatsApp-Image-2025-05-15-at-10.26.41_b8e9ad7a.jpg",
+    downloadUrl: "/uploads/2025/05/Final-OFSP-Training-Manual_GAIN.pdf",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Nutrition"],
+  },
+  {
+    id: 1704,
+    title: "Basic and Advanced Food Safety and Hygiene Practices and Regulatory Standard",
+    date: "2025-05-15",
+    author: "GAIN",
+    cover: "/uploads/2024/10/e361fa8ec52d990c451b4dad3fe72401.png",
+    downloadUrl: "#",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Proximate processing", "Nutrition"],
+  },
+  {
+    id: 1618,
+    title: "Financing SME Agribusiness in West Africa",
+    date: "2025-05-15",
+    author: "Insight",
+    cover: "/uploads/2025/05/WhatsApp-Image-2025-05-15-at-10.07.07_6749d728.jpg",
+    downloadUrl: "/uploads/2025/05/Financing-SME-agribusiness-in-West-Africa.pdf",
+    downloadLabel: "Download Pdf",
+    fileType: "pdf",
+    categories: ["Access to Finance"],
+  },
+];
+
+export type LibraryCourse = {
+  title: string;
+  slug: string;
+  cover: string;
+  author: string;
+  category: string;
+  level: string;
+};
+
+export const libraryCourses: LibraryCourse[] = [
+  {
+    title: "A-Z Innovative Proximate Processing of Baobab",
+    slug: "a-z-innovative-proximate-processing-of-baobab",
+    cover: "/uploads/2025/01/DALL·E-2025-01-29-10.19.11-An-infographic-style-digital-illustration-showcasing-A-Z-Innovative-Proximate-Processing-of-Baobab.-The-central-focus-is-a-detailed-baobab-fruit-bo.webp",
+    author: "Agdil",
+    category: "Nutrition",
+    level: "All Levels",
+  },
+];

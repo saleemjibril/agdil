@@ -2,25 +2,55 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #212327;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-poppins);
+  --font-manrope: var(--font-manrope);
+  --color-agdil-green: #34a203;
+  --color-agdil-green-dark: #2a8202;
+  /* Homepage ticker + Quick Access cards (screenshot ref) */
+  --color-agdil-market-green: #369919;
+  --color-agdil-market-green-dark: #2d7a14;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), system-ui, sans-serif;
+}
+
+@keyframes market-prices-ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-market-prices-ticker {
+  animation: market-prices-ticker 55s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-market-prices-ticker {
+    animation: none;
+  }
+}
+
+/**
+ * Impact stats: hollow numbers with green stroke.
+ * Live agdil.com uses Gilroy Bold 125px, stroke 1px, fill #FFF.
+ */
+.impact-stat-value {
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--color-agdil-green, #34a203);
 }

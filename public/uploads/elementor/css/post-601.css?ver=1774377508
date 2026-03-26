@@ -1,0 +1,212 @@
+.elementor-601 .elementor-element.elementor-element-9b7a583{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--padding-top:80px;--padding-bottom:80px;--padding-left:0px;--padding-right:0px;}.elementor-601 .elementor-element.elementor-element-dacf488{--display:flex;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-601 .elementor-element.elementor-element-dacf488:not(.elementor-motion-effects-element-type-background), .elementor-601 .elementor-element.elementor-element-dacf488 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#FFFFFF;}body.elementor-page-601:not(.elementor-motion-effects-element-type-background), body.elementor-page-601 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-primary );}:root{--page-title-display:none;}/* Start custom CSS for shortcode, class: .elementor-element-6a6b594 *//* General Form Container Styling */
+.gform_wrapper {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Form Heading Styling */
+.gform_wrapper h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Progress Indicator */
+.gform_wrapper .gform_progress_wrapper {
+    margin-bottom: 15px;
+}
+
+.gform_progress {
+    background-color: #e9ecef;
+    height: 8px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.gform_progress .gform_progress_bar {
+    background-color: #28a745; /* Green progress */
+    height: 8px;
+    border-radius: 5px;
+}
+
+/* Input Field Styling */
+.gform_wrapper input[type="text"],
+.gform_wrapper input[type="email"],
+.gform_wrapper input[type="number"],
+.gform_wrapper textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.gform_wrapper input[type="text"]:focus,
+.gform_wrapper input[type="email"]:focus,
+.gform_wrapper input[type="number"]:focus,
+.gform_wrapper textarea:focus {
+    outline: none;
+    border-color: #28a745; /* Green border on focus */
+    box-shadow: 0 0 4px rgba(40, 167, 69, 0.5);
+}
+
+/* Radio Buttons */
+.gform_wrapper input[type="radio"],
+.gform_wrapper input[type="checkbox"] {
+    accent-color: #28a745; /* Green for radio buttons */
+    margin-right: 8px;
+}
+
+.gform_wrapper label {
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Submit Button Styling */
+.gform_wrapper input[type="submit"],
+.gform_wrapper button.gform_button {
+    background-color: #34a20!important;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gform_wrapper input[type="submit"]:hover,
+.gform_wrapper button.gform_button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Spacing between questions */
+.gform_wrapper .gfield {
+    margin-bottom: 0px;
+}
+input#gform_submit_button_2 {
+    background-color: #34a203;
+}
+label.gfield_label.gform-field-label {
+    font-weight: 900;
+}
+div#field_2_7 {
+    border: none;
+    margin-bottom: -40px;
+}
+input#input_2_21 {
+    font-size:25px;
+    font-weight: 900;
+    color: green
+}
+input#input_2_22 {
+    font-size: 25px;
+    font-weight: 900;
+    color: green
+}
+input#input_2_23{
+    font-size: 25px;
+    font-weight: 900;
+    color: green
+}
+input#input_2_24{
+    font-size: 25px;
+    font-weight: 900;
+    color: green
+}
+
+input#input_2_25{
+    font-size: 40px;
+    font-weight: 900;
+    color: green
+}
+.custom-confirmation {
+    width: 100%; /* Full width */
+    max-width: 100%; /* Ensures it doesn't shrink */
+    padding: 40px 10%; /* Adds breathing room on the sides */
+    background: #fff;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+/* Style the main heading */
+.custom-confirmation h2 {
+    color: #006400;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style section headings */
+.custom-confirmation h3 {
+    color: #0054a6;
+    font-size: 22px;
+    margin: 30px 0 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Score and warning messages */
+.custom-confirmation p {
+    font-size: 18px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+/* Make key scores and warnings bold */
+.custom-confirmation p strong {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Warning messages in red */
+.custom-confirmation p strong.warning {
+    color: #d9534f;
+}
+
+/* Final recommendation in orange */
+.custom-confirmation p.final-recommendation strong {
+    color: #ff9900;
+    font-size: 20px;
+}
+
+/* Add spacing between sections */
+.custom-confirmation hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 25px 0;
+}
+
+/* Make sure content doesn't feel squeezed */
+@media (max-width: 768px) {
+    .custom-confirmation {
+        padding: 30px 5%;
+    }
+
+    .custom-confirmation h2 {
+        font-size: 24px;
+    }
+
+    .custom-confirmation h3 {
+        font-size: 20px;
+    }
+
+    .custom-confirmation p {
+        font-size: 16px;
+    }
+}/* End custom CSS */

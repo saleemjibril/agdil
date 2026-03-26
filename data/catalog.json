@@ -1,0 +1,112 @@
+{
+  "currency": "NGN",
+  "symbol": "₦",
+  "products": [
+    {
+      "slug": "tuwonvita-rice-flour",
+      "name": "TUWONVITA rice flour",
+      "price": 2500,
+      "storeSlug": "yemkem-agro-ventures",
+      "category": "crop",
+      "image": "/uploads/2025/08/WhatsApp-Product-2025-08-27-at-06.49.19-600x800.jpeg",
+      "thumb": "/uploads/2025/08/WhatsApp-Product-2025-08-27-at-06.49.19-300x300.jpeg"
+    },
+    {
+      "slug": "tuwonvita-corn-flour",
+      "name": "TUWONVITA corn flour",
+      "price": 2500,
+      "storeSlug": "yemkem-agro-ventures",
+      "category": "crop",
+      "image": "/uploads/2025/08/WhatsApp-Product-2025-08-27-at-06.49.18-2-600x396.jpeg",
+      "thumb": "/uploads/2025/08/WhatsApp-Product-2025-08-27-at-06.49.18-2-300x300.jpeg"
+    },
+    {
+      "slug": "turn-brown-rice-mix",
+      "name": "Turn Brown rice mix",
+      "price": 3500,
+      "storeSlug": "fadehan-foods-snacks",
+      "category": "crop",
+      "image": "/uploads/2025/08/WhatsApp-Product-2025-08-27-at-06.49.18-1-600x420.jpeg",
+      "thumb": "/uploads/2025/08/WhatsApp-Product-2025-08-27-at-06.49.18-1-300x300.jpeg"
+    },
+    {
+      "slug": "turn-brown-soycereal-wheat-mix",
+      "name": "Turn Brown soycereal wheat mix",
+      "price": 3500,
+      "storeSlug": "nkechi-s-treats-hub",
+      "category": "crop",
+      "image": "/uploads/2025/08/WhatsApp-Product-2025-08-27-at-06.49.17-2-600x420.jpeg",
+      "thumb": "/uploads/2025/08/WhatsApp-Product-2025-08-27-at-06.49.17-2-300x300.jpeg"
+    },
+    {
+      "slug": "turn-brown-soycereal-classic",
+      "name": "Turn Brown soycereal classic",
+      "price": 3200,
+      "storeSlug": "hauwa-s-spice-corner",
+      "category": "crop",
+      "image": "/uploads/2025/08/WhatsApp-Product-2025-08-27-at-06.49.17-1-600x420.jpeg",
+      "thumb": "/uploads/2025/08/WhatsApp-Product-2025-08-27-at-06.49.17-1-300x300.jpeg"
+    },
+    {
+      "slug": "turn-brown-soycereal-classic-plus",
+      "name": "Turn Brown soycereal classic plus",
+      "price": 3800,
+      "storeSlug": "hauwa-s-spice-corner",
+      "category": "crop",
+      "image": "/uploads/2025/08/WhatsApp-Product-2025-08-27-at-06.49.17-600x420.jpeg",
+      "thumb": "/uploads/2025/08/WhatsApp-Product-2025-08-27-at-06.49.17-300x300.jpeg"
+    }
+  ],
+  "stores": [
+    {
+      "slug": "yemkem-agro-ventures",
+      "name": "Yemkem Agro-Ventures",
+      "description": "Agro products and processed staples.",
+      "banner": "/uploads/2026/03/cropped-yemkem-banner.jpg",
+      "avatar": "/uploads/2026/03/cropped-yemkem-logo.jpg",
+      "address": "14 Oja Oba Road, Bodija, Shop 6, Bodija Market Complex\nIbadan, Oyo, Nigeria",
+      "phone": "08034521789",
+      "status": "open"
+    },
+    {
+      "slug": "nkechi-s-treats-hub",
+      "name": "Nkechi's Treats Hub",
+      "description": "Treats and cereal mixes.",
+      "banner": "/uploads/2025/08/cropped-WhatsApp-Image-2025-08-28-at-11.52.14_d72c4b16.jpg",
+      "avatar": "/uploads/2026/03/cropped-nkechi-logo.jpg",
+      "address": "8 Adeniran Ogunsanya Street, Suite 2B, Iya Loja Plaza\nSurulere, Lagos, Nigeria",
+      "phone": "09012876543",
+      "status": "open"
+    },
+    {
+      "slug": "fadehan-foods-snacks",
+      "name": "Fadehan Foods & Snacks",
+      "description": "Foods and snacks.",
+      "banner": "/uploads/2024/10/cropped-6240b05c8724227a5724a6730dfea510.png",
+      "avatar": "/uploads/2026/03/cropped-fadehan-logo.jpg",
+      "address": "Plot 23, Wuse Market Road, Block D, Stall 14\nAbuja, Abuja, Nigeria",
+      "phone": "07068923415",
+      "status": "open"
+    },
+    {
+      "slug": "hauwa-s-spice-corner",
+      "name": "Hauwa's Spice Corner",
+      "description": "Spices and cereal products.",
+      "banner": "/uploads/2024/10/cropped-c339a471e2c20593f4906a5b5519e2c4.png",
+      "avatar": "/uploads/2026/03/cropped-hauwa-logo.jpg",
+      "address": "7 Sabon Gari Market, Line C, Stall 19\nZaria, Kaduna, Nigeria",
+      "phone": "07043218765",
+      "status": "open"
+    },
+    {
+      "slug": "07067880083",
+      "name": "Sunshine spices",
+      "description": "Vendor storefront.",
+      "banner": "/uploads/2026/03/cropped-IMG-20250809-WA0031.jpg",
+      "avatar": "/uploads/2024/10/AGRIFOOD-3-300x300.jpg",
+      "address": "Block A4C Sunbuilt and Goshen trust estate kagini Abuja,\nKagini district, Abuja, Nigeria",
+      "phone": "+2347067880083",
+      "status": "closed"
+    }
+  ]
+}

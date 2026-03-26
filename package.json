@@ -6,22 +6,31 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "extract": "node scripts/extract-content.mjs",
+    "sync-uploads": "rsync -a ../wp-content/uploads/ public/uploads/"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "gray-matter": "^4.0.3",
+    "next": "15.5.14",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.14"
+    "react-hook-form": "^7.72.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "cheerio": "^1.2.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.14",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

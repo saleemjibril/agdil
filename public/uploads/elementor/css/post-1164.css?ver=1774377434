@@ -1,0 +1,109 @@
+.elementor-1164 .elementor-element.elementor-element-a27dc98{--display:flex;--min-height:500px;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--overlay-opacity:0.7;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0100px;--padding-bottom:0100px;--padding-left:020px;--padding-right:020px;}.elementor-1164 .elementor-element.elementor-element-a27dc98:not(.elementor-motion-effects-element-type-background), .elementor-1164 .elementor-element.elementor-element-a27dc98 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://agdil.com/wp-content/uploads/2025/02/Marjet.png");background-position:top center;background-repeat:no-repeat;background-size:cover;}.elementor-1164 .elementor-element.elementor-element-a27dc98::before, .elementor-1164 .elementor-element.elementor-element-a27dc98 > .elementor-background-video-container::before, .elementor-1164 .elementor-element.elementor-element-a27dc98 > .e-con-inner > .elementor-background-video-container::before, .elementor-1164 .elementor-element.elementor-element-a27dc98 > .elementor-background-slideshow::before, .elementor-1164 .elementor-element.elementor-element-a27dc98 > .e-con-inner > .elementor-background-slideshow::before, .elementor-1164 .elementor-element.elementor-element-a27dc98 > .elementor-motion-effects-container > .elementor-motion-effects-layer::before{background-color:var( --e-global-color-text );--background-overlay:'';}.elementor-1164 .elementor-element.elementor-element-43e1aac{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;}.elementor-1164 .elementor-element.elementor-element-43e1aac.e-con{--flex-grow:0;--flex-shrink:0;}.elementor-widget-heading .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );color:var( --e-global-color-primary );}.elementor-1164 .elementor-element.elementor-element-a48afc8{text-align:center;}.elementor-1164 .elementor-element.elementor-element-a48afc8 .elementor-heading-title{font-family:"Gilroy Bold", Sans-serif;font-size:60px;font-weight:700;line-height:65px;color:#FFFFFF;}.elementor-1164 .elementor-element.elementor-element-6198970{width:var( --container-widget-width, 77% );max-width:77%;--container-widget-width:77%;--container-widget-flex-grow:0;text-align:center;}.elementor-1164 .elementor-element.elementor-element-6198970 > .elementor-widget-container{padding:0px 0px 0px 0px;}.elementor-1164 .elementor-element.elementor-element-6198970.elementor-element{--align-self:center;}.elementor-1164 .elementor-element.elementor-element-6198970 .elementor-heading-title{font-family:"Manrope", Sans-serif;font-size:20px;font-weight:400;line-height:150%;color:#FFFFFF;}.elementor-1164 .elementor-element.elementor-element-2e4f1c8{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--margin-top:-5px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:80px;--padding-left:0px;--padding-right:0px;}.elementor-1164 .elementor-element.elementor-element-1dd62ed{--display:flex;}.elementor-widget-image .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );line-height:var( --e-global-typography-text-line-height );}:root{--page-title-display:none;}@media(max-width:1024px){.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );}}@media(min-width:768px){.elementor-1164 .elementor-element.elementor-element-a27dc98{--content-width:1200px;}.elementor-1164 .elementor-element.elementor-element-43e1aac{--width:100%;}}@media(max-width:767px){.elementor-1164 .elementor-element.elementor-element-a48afc8 .elementor-heading-title{font-size:40px;line-height:46px;}.elementor-1164 .elementor-element.elementor-element-6198970{--container-widget-width:100%;--container-widget-flex-grow:0;width:var( --container-widget-width, 100% );max-width:100%;}.elementor-1164 .elementor-element.elementor-element-6198970 .elementor-heading-title{font-size:18px;}.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );}}/* Start custom CSS for shortcode, class: .elementor-element-7bbb14a *//* Add borders to all table cells, including the heading */
+#tablepress-4 th, 
+#tablepress-4 td {
+    border: 1px solid #ddd; /* Adjust color as needed */
+}
+
+/* Left-align text in all table cells, including the heading */
+#tablepress-4 th, 
+#tablepress-4 td {
+    text-align: left;
+    padding: 8px 12px; /* keeps spacing neat */
+}
+
+/* Wrap the TablePress table in a scrollable container */
+#tablepress-4_wrapper {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* Set a fixed width for the table to enable horizontal scrolling */
+#tablepress-4 {
+    width: 500px; /* Adjust as needed */
+    min-width: 100%;
+}
+/* Make the wrapper scrollable */
+.tablepress-scroll {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    display: block;
+    white-space: nowrap; /* Prevents columns from wrapping */
+}
+
+/* Force the table to be wider than the container */
+#tablepress-4 {
+    width: 1800px; /* Adjust based on column width */
+    min-width: 100%;
+    table-layout: fixed; /* Ensures columns maintain a fixed width */
+    border-collapse: collapse;
+}
+
+/* Ensure table headers and cells maintain size */
+#tablepress-4 th,
+#tablepress-4 td {
+    min-width: 150px; /* Adjust as needed */
+    padding: 10px;
+    text-align: left; /* changed from center to left */
+}
+
+/* Optional: Keep the first column sticky while scrolling */
+#tablepress-4 th:first-child,
+#tablepress-4 td:first-child {
+    position: sticky;
+    left: 0;
+    background: white;
+    z-index: 2;
+}
+
+.dt-layout-cell.dt-layout-start {
+    display: none!important;
+}
+
+.dt-layout-cell.dt-layout-end {
+    display: none!important;
+}
+
+/* Make the table wrapper scrollable */
+.tablepress-scroll {
+    max-height: 800px; /* Adjust this to control the table's scroll height */
+    overflow-y: auto; /* Enables vertical scrolling within the table */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    position: relative; /* Ensures the header sticks only within this div */
+    border: 1px solid #ddd; /* Optional: Adds a border for better visibility */
+}
+
+/* Ensure the table container allows scrolling */
+.dt-scroll-body {
+    max-height: 500px; /* Adjust height as needed */
+    overflow-y: auto; /* Enables vertical scrolling within the table */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    position: relative; /* Needed for sticky header to work */
+}
+
+/* Make the table header sticky inside the scrollable table */
+.dt-scroll-head {
+    position: sticky;
+    top: 0;
+    background: white; /* Keeps the header visible */
+    z-index: 100; /* Ensures it stays above other content */
+}
+
+/* Optional: Add a shadow to separate the header from the table */
+.dt-scroll-head {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#tablepress-4 th, 
+#tablepress-4 td {
+    text-align: left!important; /* keep your left alignment */
+    white-space: normal!important; /* allow wrapping */
+    word-wrap: break-word!important; /* force wrap for long words */
+    overflow-wrap: break-word!important; /* modern version, safer */
+}/* End custom CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Gilroy Bold';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://agdil.com/wp-content/uploads/2024/10/Gilroy-Bold.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */

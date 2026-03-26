@@ -38,4 +38,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+
+# optional extract output (regenerate with npm run extract)
+content/extracted/
