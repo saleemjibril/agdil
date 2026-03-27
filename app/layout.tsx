@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Manrope, DM_Serif_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import { SiteHeader } from "@/components/SiteHeader";
-import { SiteFooter } from "@/components/SiteFooter";
+import { SiteChrome } from "@/components/SiteChrome";
 import { siteImages } from "@/lib/assets";
 import { siteConfig } from "@/lib/site";
 
@@ -62,9 +61,7 @@ export default function RootLayout({
   return (
     <html lang="en-US">
         <body className={`${poppins.variable} ${manrope.variable} ${dmSerifDisplay.variable} ${plusJakartaSans.variable} min-h-screen font-sans antialiased`}>
-        <SiteHeader />
-        <main className="min-h-[60vh]">{children}</main>
-        <SiteFooter />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );

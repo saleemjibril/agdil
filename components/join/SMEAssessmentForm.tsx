@@ -32,6 +32,11 @@ interface Section {
   courseScoreThreshold: number;
 }
 
+/** Fallback when no dedicated course URL exists (content spec) */
+const LIBRARY_URL = "https://agdil.com/library/";
+const MSME_BOOK_PDF =
+  "http://ikore.org/Agdil/wp-content/uploads/2025/05/MSME-BOOK-FINAL-1-4.pdf";
+
 const sections: Section[] = [
   {
     id: "A",
@@ -46,7 +51,7 @@ const sections: Section[] = [
       lowThreshold: 8,
       midThreshold: 13,
     },
-    courseLink: "/library",
+    courseLink: LIBRARY_URL,
     courseLinkLabel: "Business Formalisation & Compliance Short Course",
     courseScoreThreshold: 8,
   },
@@ -63,7 +68,7 @@ const sections: Section[] = [
       lowThreshold: 8,
       midThreshold: 13,
     },
-    courseLink: "/library",
+    courseLink: LIBRARY_URL,
     courseLinkLabel: "Financial Record-Keeping for Agribusinesses",
     courseScoreThreshold: 10,
   },
@@ -97,7 +102,7 @@ const sections: Section[] = [
       lowThreshold: 4,
       midThreshold: 9,
     },
-    courseLink: "/library",
+    courseLink: LIBRARY_URL,
     courseLinkLabel: "Cooperative Advantage & Group Finance",
     courseScoreThreshold: 4,
   },
@@ -114,7 +119,7 @@ const sections: Section[] = [
       lowThreshold: 4,
       midThreshold: 9,
     },
-    courseLink: "/library",
+    courseLink: LIBRARY_URL,
     courseLinkLabel: "Credit History & Recovery Resources",
     courseScoreThreshold: 4,
   },
@@ -241,11 +246,6 @@ const questions: Question[] = [
 ];
 
 const TOTAL_MAX = 65;
-
-/** Content spec: use library when a dedicated course URL is not available */
-const LIBRARY_URL = "https://agdil.com/library/";
-const MSME_BOOK_PDF =
-  "http://ikore.org/Agdil/wp-content/uploads/2025/05/MSME-BOOK-FINAL-1-4.pdf";
 
 interface RecommendedCourse {
   label: string;
@@ -605,8 +605,8 @@ export default function SMEAssessmentForm() {
           {score < sec.courseScoreThreshold && (
             <a
               href={sec.courseLink}
-              target={sec.courseLink.startsWith("/") ? undefined : "_blank"}
-              rel={sec.courseLink.startsWith("/") ? undefined : "noopener noreferrer"}
+              target={sec.courseLink.startsWith("http") ? "_blank" : undefined}
+              rel={sec.courseLink.startsWith("http") ? "noopener noreferrer" : undefined}
               className="mt-4 inline-flex items-center gap-1.5 rounded-[10px] bg-[#e6f7ef] px-4 py-2.5 text-[13px] font-bold text-[#247a4f] transition-all hover:bg-[#d0f0e0]"
             >
               <span className="text-base">&#128218;</span>
