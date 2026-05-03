@@ -1,5 +1,10 @@
 import { MarkdownPage } from "@/components/MarkdownPage";
+import { PageMotion } from "@/components/PageMotion";
 
 export default function Page() {
-  return <MarkdownPage path="pages/get-business-funds.md" />;
+  return (
+    <PageMotion>
+      <MarkdownPage path="pages/get-business-funds.md" />
+    </PageMotion>
+  );
 }

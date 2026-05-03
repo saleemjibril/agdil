@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { SectionAnimator } from "@/components/SectionAnimator";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
@@ -13,7 +14,10 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
   return (
     <>
       {!hideChrome && <SiteHeader />}
-      <main className={hideChrome ? "min-h-screen" : "min-h-[60vh]"}>{children}</main>
+      <main className={hideChrome ? "min-h-screen" : "min-h-[60vh]"}>
+        <SectionAnimator />
+        {children}
+      </main>
       {!hideChrome && <SiteFooter />}
     </>
   );

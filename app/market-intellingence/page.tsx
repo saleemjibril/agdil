@@ -1,9 +1,11 @@
 import Image from "next/image";
 import MarketIntelligenceTable from "@/components/market-intelligence/MarketIntelligenceTable";
+import { PageMotion } from "@/components/PageMotion";
 
 export default function MarketIntelligencePage() {
   return (
-    <main>
+    <PageMotion>
+    <div>
       {/* Hero */}
       <section
         className="relative flex min-h-[500px] flex-col items-center justify-center bg-cover bg-top px-5 py-[100px]"
@@ -48,6 +50,7 @@ export default function MarketIntelligencePage() {
           unoptimized
         />
       </section>
-    </main>
+    </div>
+    </PageMotion>
   );
 }

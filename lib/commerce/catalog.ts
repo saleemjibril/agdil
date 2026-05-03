@@ -25,6 +25,30 @@ export function listStores(): Store[] {
   return catalog.stores;
 }
 
+export function listStoresByVendorSlug(vendorSlug: string): Store[] {
+  const norm = vendorSlug.trim().toLowerCase();
+  if (!norm) return [];
+  return catalog.stores.filter((s) => {
+    const slug = s.slug.toLowerCase();
+    const compactName = s.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+    return slug === norm || compactName === norm || slug.startsWith(norm);
+  });
+}
+
+const PRODUCT_CATEGORY_MAP: Record<string, string[]> = {
+  "fresh-food": ["crop"],
+  "processed-food": ["crop"],
+  tubers: ["crop"],
+};
+
+export function productsForCategoryPath(parts: string[]): Product[] {
+  const key = parts.map((p) => p.trim().toLowerCase()).filter(Boolean).join("/");
+  const mapped = PRODUCT_CATEGORY_MAP[key] ?? PRODUCT_CATEGORY_MAP[parts.at(-1)?.toLowerCase() ?? ""];
+  if (!mapped) return [];
+  const allowed = new Set(mapped);
+  return catalog.products.filter((p) => allowed.has((p.category ?? "").toLowerCase()));
+}
+
 /** Dokan store listing order from static export (store-listing/index.html). */
 const STORE_LISTING_ORDER = [
   "07067880083",

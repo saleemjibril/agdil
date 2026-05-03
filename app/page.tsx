@@ -19,6 +19,7 @@ import {
   teamSectionBg,
 } from "@/lib/home";
 import { readMarkdown } from "@/lib/markdown";
+import { PageMotion } from "@/components/PageMotion";
 
 export default function HomePage() {
   const articleSlides = homeArticleCarousel.map(({ slug, cover }) => {
@@ -32,6 +33,7 @@ export default function HomePage() {
   });
 
   return (
+    <PageMotion>
     <>
       <section className="relative overflow-hidden border-b border-emerald-100 bg-gradient-to-br from-emerald-50 via-white to-white">
         <div className="mx-auto flex min-h-[60vh] max-w-6xl flex-col gap-10 px-4 py-12 md:flex-row md:items-center md:gap-12 md:py-16">
@@ -272,5 +274,6 @@ export default function HomePage() {
       </section>
 
     </>
+    </PageMotion>
   );
 }

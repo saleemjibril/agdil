@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PageMotion } from "@/components/PageMotion";
 
 const events = [
   {
@@ -58,7 +59,8 @@ function MapIcon() {
 
 export default function EventPage() {
   return (
-    <main>
+    <PageMotion>
+    <div>
       {/* Hero */}
       <section
         className="relative flex items-center justify-center bg-cover bg-center px-5 py-[100px] max-md:py-[70px]"
@@ -141,6 +143,7 @@ export default function EventPage() {
           ))}
         </div>
       </section>
-    </main>
+    </div>
+    </PageMotion>
   );
 }

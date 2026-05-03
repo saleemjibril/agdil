@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { listSlugs } from "@/lib/markdown";
 import type { Metadata } from "next";
+import { PageMotion } from "@/components/PageMotion";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -84,7 +85,8 @@ export default async function Page({ params }: Props) {
   if (!evt) notFound();
 
   return (
-    <main>
+    <PageMotion>
+    <div>
       <section className="mx-auto flex max-w-[1240px] gap-8 px-5 pb-[100px] pt-[62px] max-md:flex-col">
         {/* Left Column – Images + Register */}
         <div className="flex w-[40%] shrink-0 flex-col gap-4 max-md:w-full">
@@ -174,6 +176,7 @@ export default async function Page({ params }: Props) {
           </div>
         </div>
       </section>
-    </main>
+    </div>
+    </PageMotion>
   );
 }

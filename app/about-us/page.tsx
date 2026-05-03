@@ -3,6 +3,7 @@ import Link from "next/link";
 import { teamHome, teamSectionBg } from "@/lib/home";
 import { TeamCarousel } from "@/components/about/TeamCarousel";
 import { readMarkdown } from "@/lib/markdown";
+import { PageMotion } from "@/components/PageMotion";
 
 const heroPhotos = [
   "/uploads/2025/11/IMG-20250423-WA0001.jpg",
@@ -44,6 +45,7 @@ export default function AboutUsPage() {
   });
 
   return (
+    <PageMotion>
     <>
       {/* ── Hero ── */}
       <section className="py-14 md:py-16">
@@ -241,5 +243,6 @@ export default function AboutUsPage() {
         </div>
       </section>
     </>
+    </PageMotion>
   );
 }

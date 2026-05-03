@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { blogPosts, getBlogPost, getAdjacentPosts } from "@/lib/blog";
+import { PageMotion } from "@/components/PageMotion";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -75,7 +76,8 @@ export default async function BlogDetailPage({ params }: Props) {
   const recentPosts = blogPosts.slice(0, 4);
 
   return (
-    <main>
+    <PageMotion>
+    <div>
       {/* Hero */}
       <section
         className="relative flex min-h-[340px] items-center justify-center bg-cover bg-center px-5"
@@ -241,6 +243,7 @@ export default async function BlogDetailPage({ params }: Props) {
           </div>
         </aside>
       </section>
-    </main>
+    </div>
+    </PageMotion>
   );
 }

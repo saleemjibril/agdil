@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PageMotion } from "@/components/PageMotion";
 
 const stats = [
   { num: "15", label: "Questions" },
@@ -15,6 +16,7 @@ const infoCards = [
 
 export default function CreditReadinessLandingPage() {
   return (
+    <PageMotion>
     <div
       className="font-[family-name:var(--font-jakarta)]"
       style={{
@@ -109,5 +111,6 @@ export default function CreditReadinessLandingPage() {
         · Agricultural Digital Library · &copy; 2025
       </footer>
     </div>
+    </PageMotion>
   );
 }

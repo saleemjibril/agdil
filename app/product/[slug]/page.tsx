@@ -11,6 +11,7 @@ import {
   productDetailImage,
 } from "@/lib/commerce/catalog";
 import { PageShell } from "@/components/PageShell";
+import { PageMotion } from "@/components/PageMotion";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -37,6 +38,7 @@ export default async function Page({ params }: Props) {
   const store = getStoreBySlug(p.storeSlug);
 
   return (
+    <PageMotion>
     <PageShell title={p.name} wide>
       <div className="grid gap-10 md:grid-cols-2">
         <div className="relative aspect-square overflow-hidden rounded-xl bg-emerald-50">
@@ -79,5 +81,6 @@ export default async function Page({ params }: Props) {
         </div>
       </div>
     </PageShell>
+    </PageMotion>
   );
 }

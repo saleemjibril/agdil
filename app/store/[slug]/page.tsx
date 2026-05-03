@@ -10,6 +10,7 @@ import {
   productsForStore,
 } from "@/lib/commerce/catalog";
 import { PageShell } from "@/components/PageShell";
+import { PageMotion } from "@/components/PageMotion";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -31,6 +32,7 @@ export default async function Page({ params }: Props) {
   const products = productsForStore(slug);
 
   return (
+    <PageMotion>
     <PageShell title={store.name} description={store.description} wide>
       <h2 className="text-lg font-semibold text-neutral-900">Products from this store</h2>
       <ul className="mt-4 grid gap-4 sm:grid-cols-2">
@@ -52,5 +54,6 @@ export default async function Page({ params }: Props) {
         <p className="text-neutral-600">No products in catalogue for this store yet.</p>
       ) : null}
     </PageShell>
+    </PageMotion>
   );
 }

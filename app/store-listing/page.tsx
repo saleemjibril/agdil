@@ -1,5 +1,6 @@
 import { MarketplaceStoreGrid } from "@/components/marketplace/MarketplaceStoreGrid";
 import { listStoresForMarketplace } from "@/lib/commerce/catalog";
+import { PageMotion } from "@/components/PageMotion";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,6 +13,7 @@ export default function Page() {
   const stores = listStoresForMarketplace();
 
   return (
+    <PageMotion>
     <>
       {/* ── Hero Banner ── */}
       <section
@@ -40,5 +42,6 @@ export default function Page() {
         </div>
       </section>
     </>
+    </PageMotion>
   );
 }

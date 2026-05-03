@@ -1,9 +1,11 @@
 import Image from "next/image";
 import JoinForm from "@/components/join/JoinForm";
+import { PageMotion } from "@/components/PageMotion";
 
 export default function BecomeAPartOfUsPage() {
   return (
-    <main>
+    <PageMotion>
+    <div>
       {/* ── Section 1: Who Can Join? ── */}
       <section className="mx-auto max-w-[1200px] px-5 pb-[130px] pt-[130px] max-md:pb-[60px] max-md:pt-[60px]">
         <h2
@@ -163,6 +165,7 @@ export default function BecomeAPartOfUsPage() {
           <JoinForm />
         </div>
       </section>
-    </main>
+    </div>
+    </PageMotion>
   );
 }

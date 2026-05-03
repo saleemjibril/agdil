@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { listSlugs, readMarkdown } from "@/lib/markdown";
 import { PageShell } from "@/components/PageShell";
+import { PageMotion } from "@/components/PageMotion";
 
 export default function Page() {
   const slugs = listSlugs("articles");
   return (
+    <PageMotion>
     <PageShell
       title="Articles"
       description="Long-form analysis on nutrition, agrifood systems, and Nigeria."
@@ -26,5 +28,6 @@ export default function Page() {
         })}
       </ul>
     </PageShell>
+    </PageMotion>
   );
 }

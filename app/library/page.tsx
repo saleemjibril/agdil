@@ -1,8 +1,10 @@
 import Link from "next/link";
 import LibraryClient from "@/components/library/LibraryClient";
+import { PageMotion } from "@/components/PageMotion";
 
 export default function LibraryPage() {
   return (
+    <PageMotion>
     <>
       {/* ── Hero Banner ── */}
       <section
@@ -40,5 +42,6 @@ export default function LibraryPage() {
       {/* ── Interactive sections (client) ── */}
       <LibraryClient />
     </>
+    </PageMotion>
   );
 }

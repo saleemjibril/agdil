@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { blogPosts } from "@/lib/blog";
+import { PageMotion } from "@/components/PageMotion";
 
 export default function BlogPage() {
   return (
-    <main>
+    <PageMotion>
+    <div>
       {/* Hero */}
       <section
         className="relative flex min-h-[300px] items-center justify-center bg-cover bg-center px-5 py-[100px]"
@@ -78,6 +80,7 @@ export default function BlogPage() {
           ))}
         </div>
       </section>
-    </main>
+    </div>
+    </PageMotion>
   );
 }
