@@ -1,13 +1,13 @@
 import { MarketplaceStoreGrid } from "@/components/marketplace/MarketplaceStoreGrid";
 import { listStoresForMarketplace } from "@/lib/commerce/catalog";
 import { PageMotion } from "@/components/PageMotion";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Marketplace",
-  description:
-    "Invest in agrifood businesses — browse vendor stores and products on the AGDIL marketplace.",
-};
+  description: "Browse agrifood vendors and products on the AGDIL marketplace.",
+  path: "/store-listing",
+});
 
 export default function Page() {
   const stores = listStoresForMarketplace();

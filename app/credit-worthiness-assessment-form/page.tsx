@@ -1,5 +1,12 @@
 import Link from "next/link";
 import { PageMotion } from "@/components/PageMotion";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Credit Worthiness Assessment",
+  description: "Evaluate your agribusiness credit readiness and get actionable insights.",
+  path: "/credit-worthiness-assessment-form",
+});
 
 const stats = [
   { num: "15", label: "Questions" },

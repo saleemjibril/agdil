@@ -1,6 +1,13 @@
 import Link from "next/link";
 import LibraryClient from "@/components/library/LibraryClient";
 import { PageMotion } from "@/components/PageMotion";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Library",
+  description: "Explore AGDIL's learning resources, templates, guides, and practical toolkits for MSMEs.",
+  path: "/library",
+});
 
 export default function LibraryPage() {
   return (

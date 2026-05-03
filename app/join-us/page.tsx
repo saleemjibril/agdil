@@ -1,5 +1,12 @@
 import SMEAssessmentForm from "@/components/join/SMEAssessmentForm";
 import { PageMotion } from "@/components/PageMotion";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Join Us",
+  description: "Get involved with AGDIL programs and communities for MSME growth.",
+  path: "/join-us",
+});
 
 export default function JoinUsPage() {
   return (

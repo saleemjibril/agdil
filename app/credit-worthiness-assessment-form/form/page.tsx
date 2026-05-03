@@ -1,5 +1,13 @@
 import SMEAssessmentForm from "@/components/join/SMEAssessmentForm";
 import { PageMotion } from "@/components/PageMotion";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Credit Assessment Form",
+  description: "Complete the credit readiness assessment form.",
+  path: "/credit-worthiness-assessment-form/form",
+  noIndex: true,
+});
 
 export default function CreditWorthinessFormPage() {
   return (

@@ -4,6 +4,13 @@ import { teamHome, teamSectionBg } from "@/lib/home";
 import { TeamCarousel } from "@/components/about/TeamCarousel";
 import { readMarkdown } from "@/lib/markdown";
 import { PageMotion } from "@/components/PageMotion";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "About Us",
+  description: "Learn about AGDIL's mission, vision, team, and enterprise support network for MSMEs.",
+  path: "/about-us",
+});
 
 const heroPhotos = [
   "/uploads/2025/11/IMG-20250423-WA0001.jpg",

@@ -2,6 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { blogPosts } from "@/lib/blog";
 import { PageMotion } from "@/components/PageMotion";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Blog",
+  description: "Insights, case studies, and practical agrifood business knowledge for MSMEs.",
+  path: "/blog",
+});
 
 export default function BlogPage() {
   return (

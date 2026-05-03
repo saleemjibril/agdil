@@ -20,6 +20,13 @@ import {
 } from "@/lib/home";
 import { readMarkdown } from "@/lib/markdown";
 import { PageMotion } from "@/components/PageMotion";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Home",
+  description: "Empowering MSMEs with resources, market access, funding support, and business growth tools.",
+  path: "/",
+});
 
 export default function HomePage() {
   const articleSlides = homeArticleCarousel.map(({ slug, cover }) => {

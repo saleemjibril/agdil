@@ -3,6 +3,13 @@ import { readMarkdown, listSlugs } from "@/lib/markdown";
 import { MarkdownBody } from "@/components/MarkdownBody";
 import { PageShell } from "@/components/PageShell";
 import { PageMotion } from "@/components/PageMotion";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Funding Opportunities",
+  description: "Discover grants and funding pathways available to agrifood MSMEs.",
+  path: "/funding-opportunities",
+});
 
 export default function Page() {
   const { meta, body } = readMarkdown("pages/funding-opportunities.md");

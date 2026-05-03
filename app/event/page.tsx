@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PageMotion } from "@/components/PageMotion";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Events",
+  description: "Upcoming AGDIL events, activities, and opportunities for community engagement.",
+  path: "/event",
+});
 
 const events = [
   {

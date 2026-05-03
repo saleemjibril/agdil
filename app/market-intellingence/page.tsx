@@ -1,6 +1,13 @@
 import Image from "next/image";
 import MarketIntelligenceTable from "@/components/market-intelligence/MarketIntelligenceTable";
 import { PageMotion } from "@/components/PageMotion";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Market Intelligence",
+  description: "Real-time market insights, trends, and pricing information tailored for MSMEs.",
+  path: "/market-intellingence",
+});
 
 export default function MarketIntelligencePage() {
   return (

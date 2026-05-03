@@ -1,6 +1,13 @@
 import Image from "next/image";
 import JoinForm from "@/components/join/JoinForm";
 import { PageMotion } from "@/components/PageMotion";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Become a Part of Us",
+  description: "Join AGDIL as an MSME, partner, investor, donor, or volunteer.",
+  path: "/become-a-part-of-us",
+});
 
 export default function BecomeAPartOfUsPage() {
   return (

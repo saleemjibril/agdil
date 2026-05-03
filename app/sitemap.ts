@@ -65,6 +65,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     });
   }
+  for (const slug of listSlugs("library")) {
+    entries.push({
+      url: `${base}/library/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    });
+  }
   for (const p of listProducts()) {
     entries.push({
       url: `${base}/product/${p.slug}`,
@@ -79,6 +87,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.6,
+    });
+  }
+
+  for (const cat of ["access-to-finance", "digital-marketing", "livestock-health", "nutrition", "urban-agriculture"]) {
+    entries.push({
+      url: `${base}/library-categories/${cat}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    });
+  }
+  entries.push({
+    url: `${base}/course-category/nutrition`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.5,
+  });
+  for (const type of ["interactive-material", "pdf", "template", "video"]) {
+    entries.push({
+      url: `${base}/file-type/${type}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    });
+  }
+  for (const cat of ["capital-investment", "grant", "loan"]) {
+    entries.push({
+      url: `${base}/grants-category/${cat}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
     });
   }
 
