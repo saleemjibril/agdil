@@ -24,7 +24,7 @@ export function MarketPricesTicker({ items }: { items: readonly Item[] }) {
         <div className="flex h-full items-center py-2">
           <div className="flex w-max animate-market-prices-ticker items-center gap-10 whitespace-nowrap px-4 md:gap-14 md:px-6">
             {loop.map((row, i) => (
-        <span className="inline-flex shrink-0 items-baseline gap-1 text-sm text-neutral-900 md:text-[14px]">
+              <span key={`${row.label}-${i}`} className="inline-flex shrink-0 items-baseline gap-1 text-sm text-neutral-900 md:text-[14px]">
                 <span>{row.label}</span>
                 <span className="font-medium tabular-nums" style={{ color: TICKER_GREEN }}>
                   {row.range}
