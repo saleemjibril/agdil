@@ -14,7 +14,7 @@ const poppins = Poppins({
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 const dmSerifDisplay = DM_Serif_Display({
