@@ -43,17 +43,17 @@ export default function HomePage() {
     <PageMotion>
     <>
       <section className="relative overflow-hidden border-b border-emerald-100 bg-white">
-        <div className="mx-auto flex min-h-[60vh] flex-col gap-10 px-16 py-0 md:flex-row md:items-center md:gap-12 md:py-0 md:px-24">
-          <div className="relative z-[1] flex flex-1 flex-col justify-center">
-            <h1 className="text-[3em] font-black leading-[1.05] tracking-tight text-neutral-900 md:text-[3em] md:leading-[1.05em]">
-              Empowering MSMEs to<br/>Succeed & Provide Safe,<br/>Nutritious Foods
+        <div className="mx-auto flex min-h-[60vh] flex-col gap-10 px-6 py-12 md:flex-row md:items-center md:gap-12 md:py-0 md:px-24">
+          <div className="relative z-[1] flex flex-1 flex-col justify-center text-center md:text-left">
+            <h1 className="text-[2.5em] font-black leading-[1.05] tracking-tight text-neutral-900 md:text-[3em] md:leading-[1.05em]">
+              Empowering MSMEs to<br className="hidden md:block"/> Succeed & Provide Safe,<br className="hidden md:block"/> Nutritious Foods
             </h1>
-            <p className="mt-6 max-w-[70%] font-[family-name:var(--font-manrope)] text-[1.15em] leading-[1.6em] text-neutral-600">
+            <p className="mt-6 mx-auto md:mx-0 max-w-[90%] md:max-w-[70%] font-[family-name:var(--font-manrope)] text-[1em] md:text-[1.15em] leading-[1.6em] text-neutral-600">
               Access expert resources, connect with mentors, and
               join a thriving community focused on helping small
               and medium-sized businesses thrive.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-3">
               <Link
                 href="/get-business-funds"
                 className="rounded-md border border-agdil-green bg-agdil-green px-6 py-3 font-semibold text-white shadow-sm hover:bg-agdil-green-dark"
@@ -95,7 +95,7 @@ export default function HomePage() {
       </section>
 
       <section className="py-14 md:py-20">
-        <div className="mx-auto w-full px-16 md:px-24">
+        <div className="mx-auto w-full px-6 md:px-24">
           <h2 className="text-center text-2xl font-bold text-neutral-900 md:text-3xl">Quick Access</h2>
           <div className="mt-10">
             <QuickAccessGrid tiles={quickAccessTiles} />
@@ -104,22 +104,22 @@ export default function HomePage() {
       </section>
 
       <section id="we-do" className="bg-white py-10 md:py-16">
-        <div className="mx-auto w-full px-16 md:px-24">
-          <div className="relative flex min-h-[350px] items-stretch overflow-hidden rounded-[24px] bg-[#f2ff72]">
-            <div className="relative -ml-14 flex w-[42%] items-center justify-center">
-              <div className="absolute inset-0 z-0 w-full bg-gradient-to-r from-white via-white to-transparent"></div>
+        <div className="mx-auto w-full px-6 md:px-24">
+          <div className="relative flex min-h-[auto] flex-col md:flex-row md:min-h-[350px] items-stretch overflow-hidden rounded-[24px] bg-[#f2ff72]">
+            <div className="relative -ml-0 md:-ml-14 flex w-full md:w-[42%] items-center justify-center p-8 md:p-0">
+              <div className="absolute inset-0 z-0 w-full bg-gradient-to-b from-white via-white/80 to-transparent md:bg-gradient-to-r md:from-white md:via-white"></div>
               <Image
                 src="/uploads/2024/10/Globe_Map-1.png"
                 alt=""
                 width={420}
                 height={420}
-                className="relative z-10 h-auto w-full max-w-[420px]"
+                className="relative z-10 h-auto w-full max-w-[300px] md:max-w-[420px]"
               />
             </div>
-            <div className="flex flex-1 flex-col justify-center py-9 pr-12 text-left">
-              <div className="max-w-xl">
-                <h2 className="text-[36px] font-bold leading-tight text-neutral-900">What We Do</h2>
-                <div className="mt-6 space-y-4 font-[family-name:var(--font-manrope)] text-[17px] leading-[1.55] tracking-tight text-neutral-800">
+            <div className="flex flex-1 flex-col justify-center p-8 md:py-9 md:pr-12 md:pl-0 text-center md:text-left">
+              <div className="max-w-xl mx-auto md:mx-0">
+                <h2 className="text-[28px] md:text-[36px] font-bold leading-tight text-neutral-900">What We Do</h2>
+                <div className="mt-6 space-y-4 font-[family-name:var(--font-manrope)] text-[16px] md:text-[17px] leading-[1.55] tracking-tight text-neutral-800">
                   <p>
                     We are a dedicated organization focused on supporting SMEs through a robust network of experts,
                     mentors, and partners. Our mission is to provide small businesses with the tools and resources they
@@ -147,13 +147,13 @@ export default function HomePage() {
       </section>
 
       <section id="partners" className="mt-[70px] bg-[#EFF0FA] py-16 md:py-20">
-        <div className="mx-auto w-full px-16 md:px-24">
-          <div className="flex flex-col items-center gap-12 text-center md:flex-row md:justify-between md:text-left">
-            <h2 className="shrink-0 text-[42px] font-bold tracking-tight text-neutral-900">
+        <div className="mx-auto w-full px-6 md:px-24">
+          <div className="flex flex-col items-center gap-8 md:gap-12 text-center md:flex-row md:justify-between md:text-left">
+            <h2 className="shrink-0 text-[32px] md:text-[42px] font-bold tracking-tight text-neutral-900">
               Our Trusted Partners
             </h2>
-            <div className="flex flex-1 items-center justify-end gap-10 lg:gap-14">
-              <div className="relative h-20 w-44">
+            <div className="flex flex-1 flex-wrap items-center justify-center md:justify-end gap-6 md:gap-10 lg:gap-14">
+              <div className="relative h-12 w-24 md:h-20 md:w-44">
                 <Image
                   src="/brands/gain.png"
                   alt="GAIN"
@@ -161,7 +161,7 @@ export default function HomePage() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative h-14 w-44">
+              <div className="relative h-10 w-32 md:h-14 md:w-44">
                 <Image
                   src="/brands/smedan.png"
                   alt="SMEDAN"
@@ -169,7 +169,7 @@ export default function HomePage() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative h-18 w-20">
+              <div className="relative h-12 w-14 md:h-18 md:w-20">
                 <Image
                   src="/brands/cac.png"
                   alt="CAC"
@@ -177,7 +177,7 @@ export default function HomePage() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative h-18 w-20">
+              <div className="relative h-12 w-14 md:h-18 md:w-20">
                 <Image
                   src="/brands/nafdac.png"
                   alt="NAFDAC"
@@ -191,11 +191,11 @@ export default function HomePage() {
       </section>
 
       <section className="py-14 md:py-20">
-        <div className="mx-auto w-full px-16 md:px-24">
+        <div className="mx-auto w-full px-6 md:px-24">
           <h2 className="text-center text-2xl font-bold text-neutral-900 md:text-3xl">
             Business Formalization and Compliance Support
           </h2>
-          <p className="mx-auto mt-4 max-w-[59%] text-center font-[family-name:var(--font-manrope)] text-[16px] leading-[24px] text-neutral-600">
+          <p className="mx-auto mt-4 max-w-[90%] md:max-w-[59%] text-center font-[family-name:var(--font-manrope)] text-[16px] leading-[24px] text-neutral-600">
             We provide guidance on business registration, regulatory requirements, and compliance with food safety and
             quality standards.
           </p>
@@ -206,7 +206,7 @@ export default function HomePage() {
       </section>
 
       <section id="team" className="relative overflow-hidden border-t border-emerald-100 py-14 md:py-20">
-        <div className="absolute inset-0 bg-[#00610E] mx-auto w-full px-16 md:px-24" aria-hidden />
+        <div className="absolute inset-0 bg-[#00610E] mx-auto w-full px-6 md:px-24" aria-hidden />
         <Image
           src={teamSectionBg.base}
           alt=""
@@ -223,9 +223,9 @@ export default function HomePage() {
           sizes="100vw"
           aria-hidden
         />
-        <div className="relative z-[1] mx-auto w-full px-16 md:px-24">
+        <div className="relative z-[1] mx-auto w-full px-6 md:px-24">
           <h2 className="text-center text-2xl font-bold text-white md:text-3xl">Meet Our Team</h2>
-          <p className="mx-auto mt-4 max-w-[52%] text-center font-[family-name:var(--font-manrope)] text-[16px] leading-[24px] text-white">
+          <p className="mx-auto mt-4 max-w-[90%] md:max-w-[52%] text-center font-[family-name:var(--font-manrope)] text-[16px] leading-[24px] text-white">
             Our success is driven by a passionate and diverse team of professionals who are committed to the growth and
             empowerment of MSMEs.
           </p>
@@ -261,9 +261,9 @@ export default function HomePage() {
       </section>
 
       <section id="success" className="border-t border-emerald-100 py-14 md:py-20">
-        <div className="mx-auto w-full px-16 md:px-24">
+        <div className="mx-auto w-full px-6 md:px-24">
           <h2 className="text-center text-2xl font-bold text-neutral-900 md:text-3xl">Inspiring SME Success Stories</h2>
-          <p className="mx-auto mt-4 max-w-[49%] text-center font-[family-name:var(--font-manrope)] text-[16px] leading-[24px] text-neutral-600">
+          <p className="mx-auto mt-4 max-w-[90%] md:max-w-[49%] text-center font-[family-name:var(--font-manrope)] text-[16px] leading-[24px] text-neutral-600">
             Discover how our community has helped businesses like yours achieve their goals and overcome challenges.
           </p>
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
@@ -286,9 +286,9 @@ export default function HomePage() {
       </section>
 
       <section className="border-t border-emerald-100 bg-neutral-50/50 py-14 md:py-20">
-        <div className="mx-auto w-full px-16 md:px-24">
+        <div className="mx-auto w-full px-6 md:px-24">
           <h2 className="text-center text-2xl font-bold text-neutral-900 md:text-3xl">Our Latest Resources</h2>
-          <p className="mx-auto mt-4 max-w-[50%] text-center font-[family-name:var(--font-manrope)] text-[16px] leading-[24px] text-neutral-600">
+          <p className="mx-auto mt-4 max-w-[90%] md:max-w-[50%] text-center font-[family-name:var(--font-manrope)] text-[16px] leading-[24px] text-neutral-600">
             Dive into our latest publications, case studies, and webinars, all designed to give SMEs the insights they
             need to thrive in today&apos;s competitive business landscape.
           </p>
